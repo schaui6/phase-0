@@ -1,12 +1,12 @@
-![Alt text](/path/to/imgs/1-change-the-colors.png)
-![Alt text](/path/to/imgs/2-column.png)
-![Alt text](/path/to/imgs/3-Row.png)
-![Alt text](/path/to/imgs/4-4-Make-Equidistant.png)
-![Alt text](/path/to/imgs/5-squares.png)
-![Alt text](/path/to/imgs/6-footer.png)
-![Alt text](/path/to/imgs/7-header.png)
-![Alt text](/path/to/imgs/8-sidebar.png)
-![Alt text](/path/to/imgs/9-get-creative.png)
+![Alt colors](imgs/1-change-the-colors.png)
+![Alt column](imgs/2-column.png)
+![Alt row](imgs/3-Row.png)
+![Alt equidistant](imgs/4-4-Make-Equidistant.png)
+![Alt squares](imgs/5-squares.png)
+![Alt footer](imgs/6-footer.png)
+![Alt header](imgs/7-header.png)
+![Alt sidebar](imgs/8-sidebar.png)
+![Alt creative](imgs/9-get-creative.png)
 
 
 **How can you use Chrome's DevTools inspector to help you format or position elements?**
@@ -25,7 +25,7 @@
 
 * It might be easier to explain with the box model courtesy of [W3Schools.org](https://www.w3schhols.org).  We have multiple layers. If we look from inside the box, starting with content, the layer or space between the content and the border is the padding layer.  Then the layer between the padding and margin is the border and beyond the border is the margin.*
 
-![Alt text](/path/to/imgs/boxmodel.png)
+![Alt box model](imgs/boxmodel.png)
 
 **What was your impression of this challenge overall? (love, hate, and why?)**
 
