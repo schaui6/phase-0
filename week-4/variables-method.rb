@@ -14,7 +14,9 @@ number = gets.chomp
 better_number = number.to_i+1
 puts "#{better_number} is a bigger, better number!"
 
+https://github.com/schaui6/phase-0/blob/master/week-4/address/my_solution.rb
 
+https://github.com/schaui6/phase-0/blob/master/week-4/math/my_solutions.rb
 
 =begin
 
