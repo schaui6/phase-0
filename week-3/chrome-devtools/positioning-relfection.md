@@ -1,7 +1,7 @@
 ![Alt colors](imgs/1-change-the-colors.png)
 ![Alt column](imgs/2-column.png)
 ![Alt row](imgs/3-Row.png)
-![Alt equidistant](imgs/4-4-Make-Equidistant.png)
+![Alt equidistant](imgs/4-Make-Equidistant.png)
 ![Alt squares](imgs/5-squares.png)
 ![Alt footer](imgs/6-footer.png)
 ![Alt header](imgs/7-header.png)
