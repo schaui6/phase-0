@@ -44,6 +44,6 @@ Local variables are names given to define strings and numbers within your progra
 
 This challenge wasn't bad.  The hardest part was inperetating what the instructions were.  I had to reread the instructions a few more times for it to click in my head.  This challenge did refresh my memory on the basics of ruby.
 
-![Alt defining-variables.rb](https://github.com/schaui6/phase-0/blob/master/week-4/defining-variables.rb)
-![Alt simple-string](https://github.com/schaui6/phase-0/blob/master/week-4/simple-string.rb)
-![Alt basic-math](https://github.com/schaui6/phase-0/blob/master/week-4/basic-math.rb)
+https://github.com/schaui6/phase-0/blob/master/week-4/defining-variables.rb
+https://github.com/schaui6/phase-0/blob/master/week-4/simple-string.rb
+https://github.com/schaui6/phase-0/blob/master/week-4/basic-math.rb
