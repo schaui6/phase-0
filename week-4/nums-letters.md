@@ -8,7 +8,7 @@ An interger is a whole number without a decimal and a float is not a number with
 
 ##What is the difference between float and integer division? How would you explain the difference to someone who doesn't know anything about programming?
 
-When you use division with integers the return will output an integer.  When you use division with floats or floats with integers, the return output will be a float.  An example would be, 10 / 4 => 2 and 10.0 / 4 = 2.5*
+When you use division with integers the return will output an integer.  When you use division with floats or floats with integers, the return output will be a float.  An example would be, 10 / 4 => 2 and 10.0 / 4 = 2.5 (Also note that if there are remainders with integers, ruby will round down to the nearest whole number)
 
 ````
 puts 365*24
@@ -26,7 +26,7 @@ puts 365*24*60*10
 
 ##What is the difference between integers and floats?
 
-Inegers do not have decimals and floats do have decimals
+Inegers do not have decimals(if there are any remainders, ruby will round down to the nearest whole number) and floats do have decimals
 
 ##What is the difference between integer and float division?
 
@@ -34,11 +34,11 @@ When you divide using integers your answer will be whole numbers.  When you divi
 
 ##What are strings? Why and when would you use them?
 
-Strings are words are phrases.  Anything in quotation marks is interpreted as a string in ruby. You would want to use strings when you want to prompt a user for an input or when you want to puts a message to the user/reader/audience.
+Strings are words are phrases and numbers if set between ' ' or " ".  Anything in quotation marks is interpreted as a string in ruby. You would want to use strings when you want to prompt a user for an input or when you want to puts a message to the user/reader/audience.
 
 ##What are local variables? Why and when would you use them?
 
-Local variables are names given to define strings and numbers within your program or block. You would want to use them because instead of typing out all the code you reference the name ,sort of like a shortcut, to have the same effect.  For example if you gave a math expression the name addition.  Instead of typing out the whole expression, you can simply enter the name of the variable to calculate the expression.
+Local variables are names given to define strings and numbers within your method. You would want to use them because instead of typing out all the code you reference the name ,sort of like a shortcut, to have the same effect.  For example if you gave a math expression the name addition.  Instead of typing out the whole expression, you can simply enter the name of the variable to calculate the expression. Local variables also have a built-in "seat belt" to prevent calling the variable from outside the method and creating some funky outcomes.
 
 ##How was this challenge? Did you get a good review of some of the basics?
 
