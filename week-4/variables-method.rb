@@ -22,7 +22,7 @@ https://github.com/schaui6/phase-0/blob/master/week-4/math/my_solutions.rb
 
 How do you define a local variable?
 
-A local variable is name you give a string or expression within your block of code.
+A local variable is name you give a string or expression within your method.
 
 How do you define a method?
 
@@ -30,15 +30,15 @@ a method is a name you give a block of code.
 
 What is the difference between a local variable and a method?
 
-a local variable is name you give a string or expression and a method you name a block a code.  A method may contain a local variable.
+a local variable is name you give a string or expression within a method and a method a name of a block a code that you have given.  A method may contain a local variable.
 
 How do you run a ruby program from the command line?
 
-ruby file.rb or you can go enter irb and enter the code.
+go to the directory where the file is in and enter the command: ruby file.rb or you can go enter irb and enter the code.
 
 How do you run an RSpec file from the command line?
 
-rspec filename.rb
+goto the directory where the file is located and type in : rspec filename.rb
 
 What was confusing about this material? What made sense?
 
