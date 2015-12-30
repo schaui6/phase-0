@@ -4,7 +4,7 @@ Puts prompts your output/string onto the console and creates a new line.
 
 ##What is an integer? What is a float?
 
-An interger is a whole number without a decimal and a float is not a number with a decimals such 7.2.
+An interger is a whole number without a decimal and a float is a number with a decimal such 7.2.
 
 ##What is the difference between float and integer division? How would you explain the difference to someone who doesn't know anything about programming?
 
