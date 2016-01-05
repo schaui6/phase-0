@@ -2,7 +2,7 @@
 
 # I worked on this challenge [with Thomas Yancey ]
 
-# I spent [] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 
 # Complete each step below according to the challenge directions and
@@ -14,11 +14,11 @@
 # 0. Pseudocode
 
 # What is the input?
-# first an array, then a miniumun size of the array we are going to want to transform, devault value of nil for the padding of the array if none is given
+# first an array, then a miniumun size of the array we are going to want to transform, default value of nil for the padding of the array if none is given
 # What is the output? (i.e. What should the code return?)
 # Return an array either transformed or copied depending on the destructive or non destructive one, with the padding of the value given. if non is given nil to pad it to the min size given with the pa
 # What are the steps needed to solve the problem?
-
+# define the conditional statements: if array length is greater or equal to the min size return the array and if the min size is greater than or equal the array length, push the value into the array.
 
 # 1. Initial Solution
 def pad!(array, min_size, value = nil) #destructive
@@ -52,8 +52,6 @@ def pad!(array, min_size, value = nil) #destructive
   array << value until min_size <= array.length
   array
 end
-
-p pad!([1, 2, 3], 5)
 
 
 def pad(array, min_size, value = nil) #non-destructive
@@ -91,5 +89,6 @@ yes, we used variables named array and value to easily determine what they were 
 
 What is the difference between destructive and non-destructive methods in your own words?
 
+destructive methods modifies the elements while non-destructive methods makes a copy of the elements.  Once a method is modified, it is permanently changed.
 
 =end
