@@ -92,14 +92,17 @@ end
 
 # Release 1: Identify and describe the Ruby method you implemented. Teach your
 # accountability group how to use the methods.
-#
+## I used the select method to iterate the a copied element of the array and used the include method to find all strings that has the value from thing_to_find.  And for my hash method, I also used the select method to iterate through the array, but if the value equals to the thing_to_find arguement, then I would push its key into a new array.
+# The select method is very similar to the each method in which it iterates each element of an array or hash.  But it returns a new array/hash element if it passes as true in my block.
+# The include method returns true if the key we determine matches with our input.
 #
 #
 
 
 # Release 3: Reflect!
 # What did you learn about researching and explaining your research to others?
+#I learned that we can use if statments within our block of code while we iterate it.
 #
-#
+#example: array.each {|k,v| if v == name print k}
 #
 #
