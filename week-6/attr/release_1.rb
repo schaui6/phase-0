@@ -1,4 +1,3 @@
-#Release 0:
 
 class Profile
 
@@ -76,3 +75,5 @@ puts
 puts "---- printing all profile info -----"
 sleep 0.8
 instance_of_profile.print_info  #Let's see the final product now. We changed all of the values using setters, so everything is different than before.
+
+

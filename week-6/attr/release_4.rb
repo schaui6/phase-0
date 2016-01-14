@@ -77,3 +77,5 @@ puts
 puts "---- printing all profile info -----"
 sleep 0.8
 instance_of_profile.print_info
+
+
