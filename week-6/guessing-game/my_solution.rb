@@ -66,3 +66,23 @@ end
 
 
 # Reflection
+
+=begin
+
+How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
+
+In real life we have goals that we need to break down, we call them methods and they give the step an action or something to do.  And we can use instance variables as characteristics.  If we were at a pool and were told to swim a lap.  Well which swimming method should we use? Crawl stroke, breathe stroke, back stroke, or butterfly?  We can create a method for each stoke and the instance variable could be lap, how long is a lap or how many strokes will it to take to complete a lap.
+
+When should you use instance variables? What do they do for you?
+
+You should use instance variables within the class that it is assigned in.  They allow us to access the variable anywhere in the class.
+
+Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with?
+
+I used if/else statements for flow control along with comparison operators.  I didn't have much struggles other than syntax errors.
+
+Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+
+Symbols points to only one object, so it reads faster and no fear of it being overwritten.
+
+=end
