@@ -1,0 +1,41 @@
+# Your Names
+# 1)Sanderfer Chau
+# 2)Tyler
+
+# We spent 1 hours on this challenge.
+
+# Bakery Serving Size portion calculator.
+
+  serving_size = library[item_to_make]
+
+
+  remaining_ingredients = num_of_ingredients % serving_size
+
+  return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}" if remaining_ingredients == 0
+
+
+  not_exact_ingredients = "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items:" #TODO: MAKE THIS FEATURE
+  case remaining_ingredients
+      when 1
+        return not_exact_ingredients + " 1 cookie"
+      when 2
+        return not_exact_ingredients + " 2 cookies"
+      when 3
+        return not_exact_ingredients + " 3 cookies"
+      when 4
+        return not_exact_ingredients + " 4 cookies"
+      when 5
+        return not_exact_ingredients + " 1 cake"
+      end
+end
+
+p serving_size_calc("pie", 7)
+p serving_size_calc("pie", 8)
+p serving_size_calc("cake", 5)
+p serving_size_calc("cake", 7)
+p serving_size_calc("cookie", 1)
+p serving_size_calc("cookie", 10)
+p serving_size_calc("THIS IS AN ERROR", 5)
+
+#  Reflection
+

@@ -1,0 +1,96 @@
+html {
+  background-color: red;
+  color: #000080;
+  background: #ffffff;
+
+  }
+  a {
+    color: #800080;
+    position: relative;
+ }
+
+  a:visited {
+    color: #ff0000;
+  }
+
+  header {
+    font-weight: bold;
+    text-align: center;
+    line-break: normal;
+  }
+  p span {
+    font-size: 40px;
+  }
+  #officialhome {
+    font-size: 25px
+  }
+  #address {
+    font-size: 15px;
+  }
+
+ #right {
+   text-align: right;
+ }
+
+ img{
+   text-align: center;
+   margin-top: 10px;
+   }
+
+section p {
+  text-align: center;
+   }
+
+article {
+  text-align: left;
+    margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ .hline {
+   width:100%; height:1px; background-color: grey;
+ }
+
+ .subtxt {
+   font-size: 10px;
+   display: block;
+ }
+
+ li {
+  padding: 0px 0px 40px 0px;
+ }
+
+header {
+    padding: 0px 0px 10px 0px;
+
+}
+
+table {
+  margin: auto;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+The path is very important when linking an external file.  We ran into issues with the formatting not showing up because or relative path was wrong and none of the formatting shoed up.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+We used the display properting to break lines, we also used margin: auto to center the table.  It was diffeicult to get the site how we wanted it, because we were having issues with some elements overriding others.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+Size, color, font-weight.  Yes we used classes and ids to modify the HTML, we used classes and ids to use them as selectors in CSS to easily format our elements.  We used the to align elements, format, and make horizontal lines.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+We had cleaner code, because of the CSS, with CSS we are able to section off areas of our site, label the sections with ids and classes to allow less clutter for formating, and positioning.  Because it being cleaner if there were any errors we are able to find it easier and that is why we follow best practices
+
+*/
+
+
+
+
+
+
