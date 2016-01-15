@@ -39,3 +39,21 @@ p serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
 
+=begin
+What did you learn about making code readable by working on this challenge?
+
+It taught me that it is easier to read so that I can refactor and better understand what the code is doing.
+
+Did you learn any new methods? What did you learn about them?
+
+No new methods learned.  But I learned more about hashes and to use driver code to see what the hash is doing.
+
+What did you learn about accessing data in hashes?
+
+That I can run methods on the accessed hash.
+
+What concepts were solidified when working through this challenge?
+
+How hashes worked through iteration and refactoring.
+
+=end
