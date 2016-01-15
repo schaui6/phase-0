@@ -62,22 +62,22 @@ end
 =begin
 What were the main differences between this die class and the last one you created in terms of implementation?
 
-
+There argument error condition was differnt, in this challenge we changed it to "if the input is an empty array".  And since we are inputing an array, we needed to change how ruby reads how many sides by using .length. Also since we are inputting an array we had to use .sample method.
 
 Did you need to change much logic to get this to work?
 
-
+Not much, I knew the input was different and that the built in methods that were used only worked for integers so I had to change them or convert them
 
 What does this exercise teach you about making code that is easily changeable or modifiable?
 
-
+That keeping everything readible and dry, makes changes easy.
 
 What new methods did you learn when working on this challenge, if any?
 
-
+The sample method is similar to the random method, but allows us to work with arrays.
 
 What concepts about classes were you able to solidify in this challenge?
 
-
+That instance variables can be used within the class and more practice with arguement errors was nice,
 
 =end
