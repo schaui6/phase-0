@@ -25,96 +25,100 @@
 
 class BingoBoard
 
-  def initialize(board)
-    @bingo_board = board
+#crate method for everything being passing around
+  attr_accessor :b
+  attr_accessor :i
+  attr_accessor :n
+  attr_accessor :g
+  attr_accessor :o
+  attr_reader :board
+  attr_accessor :current_players_board
+  attr_reader :rand_letter
+  attr_reader :rand_num
+
+def initialize(board)
+    raise ArgumentError.new ('We need a legit board, not the Craigelist\'s Version.') unless board.flatten.length == 25
+
+    @current_players_board = board
+    @board = board
+
+    @b = current_players_board[0][0],current_players_board[1][0],current_players_board[2][0],current_players_board[3][0],current_players_board[4][0]
+    @i = current_players_board[0][1],current_players_board[1][1],current_players_board[2][1],current_players_board[3][1],current_players_board[4][1]
+    @n = current_players_board[0][2],current_players_board[1][2],current_players_board[2][2],current_players_board[3][2],current_players_board[4][2]
+    @g = current_players_board[0][3],current_players_board[1][3],current_players_board[2][3],current_players_board[3][3],current_players_board[4][3]
+    @o = current_players_board[0][4],current_players_board[1][4],current_players_board[2][4],current_players_board[3][4],current_players_board[4][4]
   end
+
+
 def draw
   @letter = ["b","i","n","g","o"].sample
   @number = rand(1..100)
-  p "Our number is #{@letter}#{@number}."
 
-  if @letter == "b"
-    puts "testb"
-    @bingo_board = @bingo_board.map do |something|
-      if something.kind_of?(Array)
-        something.map do |nums|
-          if nums == @number
-            nums = "x"
-          else
-            nums
-          end
+  if
+    @letter == "b"
+      @b = @b.map do |something|
+        if something == @number
+          something = "x"
+        else
+          something
         end
-      else
-        something
       end
-    end
 
   elsif
     @letter == "i"
-    puts "testi"
-    @bingo_board = @bingo_board.map do |something|
-      if something.kind_of?(Array)
-        something.map do |nums|
-          if nums == @number
-            nums = "x"
-          else
-            nums
-          end
+      @i = @i.map do |something|
+        if something == @number
+          something = "x"
+        else
+          something
         end
-      else
-        something
       end
-    end
 
   elsif
     @letter == "n"
-    @bingo_board = @bingo_board.map do |something|
-      if something.kind_of?(Array)
-        something.map do |nums|
-          if nums == @number
-            nums = "x"
-          else
-            nums
-          end
+      @n = @n.map do |something|
+        if something == @number
+          something = "x"
+        else
+          something
         end
-      else
-        something
       end
-    end
+
   elsif
     @letter == "g"
-    @bingo_board = @bingo_board.map do |something|
-      if something.kind_of?(Array)
-        something.map do |nums|
-          if nums == @number
-            nums = "x"
-          else
-            nums
-          end
+      @g = @g.map do |something|
+        if something == @number
+          something = "x"
+        else
+          something
         end
-      else
-        something
       end
-    end
   elsif
-    @letter =="o"
-    @bingo_board = @bingo_board.map do |something|
-      if something.kind_of?(Array)
-        something.map do |nums|
-          if nums == @number
-            nums = "x"
-          else
-            nums
-          end
+    @letter == "o"
+      @o = @o.map do |something|
+        if something == @number
+          something = "x"
+        else
+          something
         end
-      else
-        something
       end
     end
-
+    print "Your resuld after the draw"
+    puts
+    print show_board
   end
-end
 
+  def show_board
+    print b
+    puts
+    print i
+    puts
+    print n
+    puts
+    print g
+    puts
+    print o
+  end
 end
 
 # Refactored Solution
