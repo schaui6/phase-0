@@ -13,12 +13,24 @@ alert("Hey! That is my favorite too!");
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
 
-
+var fizzbuzz = function(x) {
+if (x % 3 == 0) && (x % 5 == 0)
+   console.log("FizzBuzz");
+elsif (x % 3 == 0)
+   console.log("Fizz");
+elsif (x % 5 == 0)
+  console.log("Buzz");
+else (x)
+  console.log(x);
+}
 
 // Functions
 
 // Complete the `minimum` exercise.
 
+function min(x, y) {
+  console.log(Math.min(x, y));
+}
 
 
 // Data Structures: Objects and Arrays
