@@ -82,5 +82,5 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 // How are constructors different from Ruby classes (in your research)?
 
-// From what I can tell is that instead of using '@' to signify an instance variable, you would use this. And the constructor function acts like a class and method combined.  So initilize and other tasks all in one function.
+// From what I can tell is that instead of using '@' to signify an instance variable, you would use this. And the constructor function acts like a class and method combined.  So initilize and other tasks all in one function. Also we are able to add, edit or delete properties from outside the object, where in runy you can only give it a new value to the instance.
 
