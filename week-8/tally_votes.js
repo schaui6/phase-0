@@ -70,6 +70,27 @@ var officers = {
 
 
 
+for (var name in votes){
+  for(var position in votes[name]){
+    var candidate = votes[name][position]
+    voteCount[position][candidate] = (voteCount[position][candidate] || 0)+1;
+  }
+}
+
+
+for(var position in voteCount){
+  var counter = 0;
+  for(var candidate in voteCount[position]){
+    var votes = voteCount[position][candidate];
+        if (votes > counter) {
+          counter = votes;
+          officers[position] = candidate;
+        }
+    }
+}
+
+console.log(voteCount);
+
 
 
 
