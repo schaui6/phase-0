@@ -71,23 +71,30 @@ var officers = {
 
 
 for (var name in votes){
-  for(var position in votes[name]){
-    var candidate = votes[name][position]
-    voteCount[position][candidate] = (voteCount[position][candidate] || 0)+1;
+  for (var title in voteCount){
+    if (voteCount[title][votes[name][title]] === undefined){
+      voteCount[title][votes[name][title]] = 1
+    } else {
+      voteCount[title][votes[name][title]] += 1;
+    }
   }
 }
 
 
-for(var position in voteCount){
-  var counter = 0;
-  for(var candidate in voteCount[position]){
-    var votes = voteCount[position][candidate];
-        if (votes > counter) {
-          counter = votes;
-          officers[position] = candidate;
-        }
-    }
+//target value
+ voteCount.president.Bob
+//place value into a collection
+var officers = {
+  president: undefined,
+
 }
+
+//sort the collection to find the highist value
+//if value is the hightest, display winner for position
+
+//driver code
+console.log(voteCount)
+// console.log(officers)
 
 console.log(voteCount);
 
