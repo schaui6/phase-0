@@ -122,59 +122,22 @@ console.log(voteCount);
 // Test Code:  Do not alter code below this line.
 
 
-function assert(test, message, test_number) {
-  if (!test) {
-    console.log(test_number + "false");
-    throw "ERROR: " + message;
+for (var name in votes){
+  for (var title in voteCount){
+    if (voteCount[title][votes[name][title]] === undefined){
+      voteCount[title][votes[name][title]] = 1
+    } else {
+      voteCount[title][votes[name][title]] += 1;
+    }
   }
-  console.log(test_number + "true");
-  return true;
 }
 
-assert(
-  (voteCount.president["Bob"] === 3),
-  "Bob should receive three votes for President.",
-  "1. "
-)
 
-assert(
-  (voteCount.vicePresident["Bob"] === 2),
-  "Bob should receive two votes for Vice President.",
-  "2. "
-)
-
-assert(
-  (voteCount.secretary["Bob"] === 2),
-  "Bob should receive two votes for Secretary.",
-  "3. "
-)
-
-assert(
-  (voteCount.treasurer["Bob"] === 4),
-  "Bob should receive four votes for Treasurer.",
-  "4. "
-)
-
-assert(
-  (officers.president === "Louise"),
-  "Louise should be elected President.",
-  "5. "
-)
-
-assert(
-  (officers.vicePresident === "Hermann"),
-  "Hermann should be elected Vice President.",
-  "6. "
-)
-
-assert(
-  (officers.secretary === "Fred"),
-  "Fred should be elected Secretary.",
-  "7. "
-)
-
-assert(
-  (officers.treasurer === "Ivy"),
-  "Ivy should be elected Treasurer.",
-  "8. "
-)
+for (var position in voteCount){
+  var greedy_name = "name";
+  var greedy_bean = 0;
+  for (var candidate in voteCount[position]) {
+    if(greedy_bean < voteCount[position][candidate]) {
+      greedy_bean = voteCount[position][candidate];
+      greedy_name = candidate;
+    };
