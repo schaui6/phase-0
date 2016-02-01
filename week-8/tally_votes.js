@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with Aaron Hu
+// This challenge took me 2 hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -63,6 +63,15 @@ var officers = {
 }
 
 // Pseudocode
+//voteCount is an empty box
+//inside voteCount has 4 smaller boxes labled title.
+//inside each titled box there votes(jars of jellybeans)
+//count through each jar to find out how many jellybeans there are
+//compare only 2 jars at a time.
+//give the jar with the most jellybeans a greedy variable.
+//if the next jar has more jellybeans, overwrite that greedy variable
+//Once the jar for each title is determined, call the officers box to determine the winners for each jar.
+
 
 
 // __________________________________________
@@ -80,23 +89,17 @@ for (var name in votes){
   }
 }
 
+for (var position in voteCount){
+  var greedy_bean = 0;
+  for (var candidate in voteCount[position]) {
+    if(greedy_bean < voteCount[position][candidate]) {
+      greedy_bean = voteCount[position][candidate];
+      officers[position] = candidate;
+    };
+  };
+};
 
-//target value
- voteCount.president.Bob
-//place value into a collection
-var officers = {
-  president: undefined,
-
-}
-
-//sort the collection to find the highist value
-//if value is the hightest, display winner for position
-
-//driver code
-console.log(voteCount)
-// console.log(officers)
-
-console.log(voteCount);
+console.log(officers)
 
 
 
@@ -104,23 +107,6 @@ console.log(voteCount);
 
 // __________________________________________
 // Refactored Solution
-
-
-
-
-
-
-// __________________________________________
-// Reflection
-
-
-
-
-
-
-// __________________________________________
-// Test Code:  Do not alter code below this line.
-
 
 for (var name in votes){
   for (var title in voteCount){
@@ -132,12 +118,40 @@ for (var name in votes){
   }
 }
 
-
 for (var position in voteCount){
-  var greedy_name = "name";
-  var greedy_bean = 0;
+  var counter = 0;
   for (var candidate in voteCount[position]) {
-    if(greedy_bean < voteCount[position][candidate]) {
-      greedy_bean = voteCount[position][candidate];
-      greedy_name = candidate;
+    if(counter < voteCount[position][candidate]) {
+      counter = voteCount[position][candidate];
+      officers[position] = candidate;
     };
+  };
+};
+
+console.log(officers)
+
+
+
+
+// __________________________________________
+// Reflection
+
+// What did you learn about iterating over nested objects in JavaScript?
+
+I learned about the concept of "being greedy".  What this means is that variables can be overwritten.  Knowing that I am able to loop my nested object one by one to determine the highest vote compared to the next element and storing the higher value in the variable.  And then when it loops to the next element is determines the higher vote and stores the higher value until it is done looping, thus storing the highest value of all votes.
+
+// Were you able to find useful methods to help you with this?
+
+I did not have much luck with methods in this challenge.  But I did utilize loops and used variables to determine the winner, which was method that I never really thought about before.
+
+// What concepts were solidified in the process of working through this challenge?
+
+Loops and variables were solidified.  I used variables in a way I would never would have considered before.  This was my toughest challenge and when a friend mentioned the idea of being greedy, using variables to store the highest value and to override the value with the next highest value, it was genious.  å
+
+
+// __________________________________________
+// Test Code:  Do not alter code below this line.
+
+
+
+
