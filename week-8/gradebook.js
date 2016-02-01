@@ -1,7 +1,7 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge with Aaron Hu.
+This challenge took me 1 hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -86,9 +86,17 @@ var gradebook = {
 
 // __________________________________________
 // Reflect
+//What did you learn about adding functions to objects?
 
+I learned more about FOR loops and how to use it in combination with a counter to iterate an object in JavaScript.  Functions work a lot like methods in ruby and more practice has helped with proper syntax.
 
+//How did you iterate over nested arrays in JavaScript?
 
+I used a FOR loop to iterate over nested arrays to find the average.  Much like iterating through arrays with ruby, it was more of a syntax learning experience.  It was fustrating to get the syntax correct though, due to confusion with ruby syntax.
+
+//Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+
+I wouldn't say new, but using the push method was new for me in Javascript.  It took a few tries to get the syntax correct, but I managed and it wasn't as bad as getting my loop to work the way I wanted.
 
 
 
