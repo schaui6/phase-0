@@ -28,11 +28,14 @@ $('body > h1').css({'visibility': 'visible'});
 $(".mascot h1").html("Fiddler Crabs");
 //RELEASE 5: Event Listener
   // Add the code for the event listener here
+$('img').on('mouseover', function(e){
+    e.preventDefault()
+    $(this).attr('src', 'fiddler_crab.png')
 
 
 //RELEASE 6: Experiment on your own
-
-
+$('img').animate({'width': '100px'}, 500);
+});
 
 
 
