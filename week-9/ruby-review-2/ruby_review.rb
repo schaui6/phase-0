@@ -89,10 +89,13 @@ puts "Now you have #{super_mario.pez_count} pez!"
 
 # Reflection
 #What concepts did you review in this challenge?
-
+#I got to review classes and intance variables. I also go to play with shift and unshift methods, which I rarely used in the past. And the attr_accessor, altough it turns out I didn't need to use it.
 
 
 #What is still confusing to you about Ruby?
 
+#In this challenge, nothing was confusing.  Also I would like to review more about classes to solify my understanding of this concept some more.
 
 #What are you going to study to get more prepared for Phase 1?
+
+#I am going to review ruby basics and classes to prepare for phase 1.  I am also planning to review my old course work and rework it for more exposure.

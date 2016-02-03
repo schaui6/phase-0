@@ -41,3 +41,16 @@ $('img').animate({'width': '100px'}, 500);
 
 
 })  // end of the document.ready function: do not remove or write DOM manipulation below this.
+
+//Relection:
+// What is jQuery?
+
+//jQuery is a way to make our HTML and CSS more dynamic and interactive.
+
+// What does jQuery do for you?
+
+//It lets us animate HTML elements.  We can use it to add new elements.  We can use it to edit elements of HTML.
+
+// What did you learn about the DOM while working on this challenge?
+
+//How to target elements.  How to change CCS styling. How to animate elements.
